@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Simple Push Demo</title>
+  <!-- Page styles -->
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <main class="l-main">
+    <div class="l-enable">
+      <div class="c-toggle">
+        <input class="c-toggle--checkbox js-enable-checkbox" type="checkbox" id="enable-push-switch" disabled />
+        <label class="c-toggle--label" for="enable-push-switch">Enable push toggle</label>
+      </div>
+      <span>Enable push notifications</span>
+    </div>
+
+    <div class="js-send-push-options">
+      <section class="l-push-payload js-payload-textfield-container">
+        <label class="c-text-input" for="push-payload">
+          <input type="text" id="push-payload" class="js-payload-textfield" placeholder="&nbsp;">
+          <span class="c-text-input--label">Token</span>
+          <span class="c-text-input--bg"></span>
+        </label>
+      </section>
+
+      <h4>This Browsers Subscription</h4>
+        <p>Below is your current subscription.</p>
+        <pre><code class="js-subscription-json language-json"></code></pre>
+        <hr />
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/@gauntface/logger@3.0.2/build/browser-globals.js"></script>
+  <script type="module" src="scripts/app-controller.js"></script>
+</body>
+</html>
