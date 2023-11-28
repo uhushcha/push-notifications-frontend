@@ -1,6 +1,6 @@
 /* TODO: Use a build process to optimize loading of styles */
-@import url("variables/_colors.css");
-@import url("variables/_dimens.css");
+@import url("variables/colors.css");
+@import url("variables/dimens.css");
 
 @import url("html/body.css");
 @import url("html/pre.css");
